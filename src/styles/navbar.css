@@ -1,0 +1,110 @@
+/* Navbar.css */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #121212;
+  color: white;
+}
+
+.logo {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main-links a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main-links .active {
+  font-weight: 700;
+  background: var(--aa, linear-gradient(91deg, #7526f2 0%, #c826f2 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  position: relative;
+}
+
+.main-links .active::after {
+  content: '';
+  position: absolute;
+  bottom: -19px; /* Set negative bottom margin to shift the underline below the link */
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #7526f2; /* Set the underline color */
+}
+
+.auth-buttons button {
+  margin-left: 15px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #121212;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.signup-btn {
+  border-radius: 16px;
+  background: var(--aa, linear-gradient(91deg, #7526f2 0%, #c826f2 100%));
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Change button colors on hover */
+.auth-buttons button:hover {
+  opacity: 0.8;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none; /* Initially hide the hamburger menu */
+}
+
+@media (max-width: 975px) {
+  .main-links,
+  .auth-buttons {
+    display: none; /* Hide main-links and additional-links on smaller screens */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu on smaller screens */
+    cursor: pointer;
+    font-size: 30px;
+  }
+}
