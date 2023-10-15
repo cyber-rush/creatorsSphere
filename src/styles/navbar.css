@@ -96,7 +96,7 @@ input[type='checkbox'] {
   display: none; /* Initially hide the hamburger menu */
 }
 
-@media (max-width: 975px) {
+@media (max-width: 986px) {
   .main-links,
   .auth-buttons {
     display: none; /* Hide main-links and additional-links on smaller screens */

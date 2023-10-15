@@ -1,0 +1,40 @@
+.common-button {
+  border-radius: 16px;
+  background: linear-gradient(93deg, #b126f2 3.38%, #7700d4 99.69%);
+  transition: background 0.3s ease; /* Add transition for smooth color change */
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  width: 278px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  margin: auto auto;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  margin-top: 5%;
+}
+
+.common-button:hover {
+  background: linear-gradient(
+    93deg,
+    #6f0c8c 3.38%,
+    #3e0052 99.69%
+  ); /* Darker shade for hover */
+}
+
+@media (max-width: 986px) {
+  .common-button {
+    font-size: 14px;
+    width: auto;
+    height: 36px;
+    padding: 12px 40px;
+    gap: 10px;
+    text-align: center;
+  }
+}

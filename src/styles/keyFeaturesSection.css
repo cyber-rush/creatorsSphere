@@ -1,0 +1,115 @@
+.key-features-section {
+  background-color: #1c1423;
+}
+
+.key-heading {
+  padding-top: 3%;
+  text-align: center;
+  color: #d9d9d9;
+  font-family: Roboto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 118%;
+}
+
+.cards {
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust gap between cards as needed */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 28px;
+  background: linear-gradient(to bottom right, #251b2e00, #251b2e);
+  width: calc(45% - 20px); /* Adjust width and gap for responsive design */
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card p {
+  flex-basis: 120px;
+  max-width: 100%;
+  margin: 0 auto;
+  color: var(--content-100, #ba94df);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+
+.card h3 {
+  flex-basis: 100px;
+  color: var(--white-50, #cac4d2);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 118%; /* 47.2px */
+}
+
+.card img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+  flex-basis: auto;
+  object-fit: contain; /* Preserve aspect ratio and contain the image within the container */
+}
+
+.image-order {
+  order: -1;
+}
+
+.large-card {
+  flex-basis: 48%; /* Adjust the width for large cards */
+  height: 700px;
+  margin-bottom: 3%;
+}
+
+.small-card {
+  flex-basis: 30%; /* Adjust the width for small cards */
+  height: 600px;
+}
+
+@media (max-width: 986px) {
+  .key-heading {
+    font-size: 24px;
+  }
+
+  .key-heading span {
+    background: var(
+      --linera-100,
+      linear-gradient(90deg, #5200ff 0%, #fff 83.41%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card {
+    justify-content: center;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+  .large-card,
+  .small-card {
+    flex-basis: 80%; /* Full width for all cards on smaller screens */
+  }
+}

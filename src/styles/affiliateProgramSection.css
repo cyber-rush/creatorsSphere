@@ -1,0 +1,87 @@
+.affiliate-program-section {
+  background: url('../lib/emojis.svg') center/cover no-repeat;
+  text-align: center;
+  height: 739px;
+  height: 100vh; /* 100% of viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.affliate-main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.affiliate-program-section h1 {
+  color: var(--white-50, #cac4d2);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 60%;
+  margin: auto;
+}
+
+.affiliate-program-section h5 {
+  color: rgba(137, 117, 156, 0.7);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 60%;
+  margin: auto;
+}
+
+.affiliate-program-section span {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(91deg, #7526f2 0%, #c826f2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.custom-order {
+  order: -1;
+}
+
+.call-to-action-2 {
+  border-radius: 28px;
+  /* width: 80%; */
+  max-width: 95%;
+  margin: 0 auto;
+  background-image: url('../lib/abc.jpg'), url('../lib/left-girl.svg'),
+    url('../lib/right-girl.svg');
+  background-position:
+    top center,
+    left,
+    right;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-blend-mode: hard-light;
+}
+
+@media (max-width: 986px) {
+  .affiliate-program-section {
+    /* background-size: 80%; */
+    height: 400px;
+    background-position: center center 100px;
+  }
+  .affiliate-program-section h1 {
+    font-size: 20px;
+  }
+  .affiliate-program-section h5 {
+    font-size: 12px;
+  }
+  .affiliate-program-section span {
+    font-size: 18px;
+  }
+}
